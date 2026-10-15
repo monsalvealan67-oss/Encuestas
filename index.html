@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas y Gráficos Estadísticos</title>
-    <!-- Cargamos la librería Chart.js para los gráficos -->
+    <title>Tablas y Gráficos Estadísticos Completo (13 Preguntas)</title>
+    <!-- Cargamos la librería Chart.js para los gráficos dinámicos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -15,7 +15,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
             background: #ffffff;
             padding: 30px;
@@ -38,7 +38,7 @@
             border: 1px solid #e0e0e0;
             border-radius: 8px;
             padding: 20px;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.03);
         }
         h3 {
@@ -47,6 +47,7 @@
             padding-bottom: 8px;
             margin-top: 0;
             margin-bottom: 20px;
+            font-size: 1.15em;
         }
         .grid-layout {
             display: grid;
@@ -83,7 +84,7 @@
         
         .chart-box {
             position: relative;
-            max-height: 250px;
+            max-height: 230px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -93,17 +94,15 @@
 <body>
 
 <div class="container">
-    <h1>Resultados con Gráficos y Tablas</h1>
-    <div class="subtitle">Consolidado general de la encuesta de bienestar</div>
+    <h1>Resultados de la Encuesta con Gráficos</h1>
+    <div class="subtitle">Consolidado completo de las 13 preguntas</div>
 
-    <!-- Pregunta 1: Edad -->
+    <!-- 1. Edad -->
     <div class="card">
         <h3>1. Edad de los encuestados</h3>
         <div class="grid-layout">
             <table>
-                <thead>
-                    <tr><th>Edad</th><th>Cantidad</th><th>Porcentaje</th></tr>
-                </thead>
+                <thead><tr><th>Edad</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
                 <tbody>
                     <tr><td>13 años</td><td>5</td><td>50%</td></tr>
                     <tr><td>14 años</td><td>4</td><td>40%</td></tr>
@@ -115,17 +114,16 @@
         </div>
     </div>
 
-    <!-- Pregunta 2: Género -->
+    <!-- 2. Género -->
     <div class="card">
         <h3>2. Género</h3>
         <div class="grid-layout">
             <table>
-                <thead>
-                    <tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr>
-                </thead>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
                 <tbody>
                     <tr><td>Masculino</td><td>7</td><td>70%</td></tr>
                     <tr><td>Femenino</td><td>3</td><td>30%</td></tr>
+                    <tr><td>Prefiero no decirlo</td><td>0</td><td>0%</td></tr>
                     <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
                 </tbody>
             </table>
@@ -133,17 +131,16 @@
         </div>
     </div>
 
-    <!-- Pregunta 3: Frecuencia de tristeza -->
+    <!-- 3. Grado o nivel educativo -->
     <div class="card">
-        <h3>3. ¿Con qué frecuencia te sientes triste o sin ánimo?</h3>
+        <h3>3. Grado o nivel educativo</h3>
         <div class="grid-layout">
             <table>
-                <thead>
-                    <tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr>
-                </thead>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
                 <tbody>
-                    <tr><td>A veces</td><td>8</td><td>80%</td></tr>
-                    <tr><td>Frecuentemente</td><td>2</td><td>20%</td></tr>
+                    <tr><td>Colegio/escuela</td><td>9</td><td>90%</td></tr>
+                    <tr><td>Universidad</td><td>1</td><td>10%</td></tr>
+                    <tr><td>Trabajo</td><td>0</td><td>0%</td></tr>
                     <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
                 </tbody>
             </table>
@@ -151,18 +148,16 @@
         </div>
     </div>
 
-    <!-- Pregunta 4: Factor emocional -->
+    <!-- 4. Ocupación -->
     <div class="card">
-        <h3>4. ¿Qué factor crees que más afecta tu estado emocional?</h3>
+        <h3>4. Ocupación</h3>
         <div class="grid-layout">
             <table>
-                <thead>
-                    <tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr>
-                </thead>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
                 <tbody>
-                    <tr><td>Familia</td><td>1</td><td>10%</td></tr>
-                    <tr><td>Trabajo/Estudio</td><td>6</td><td>60%</td></tr>
-                    <tr><td>Otro</td><td>3</td><td>30%</td></tr>
+                    <tr><td>Estudio</td><td>9</td><td>90%</td></tr>
+                    <tr><td>Trabajo</td><td>1</td><td>10%</td></tr>
+                    <tr><td>Ninguno</td><td>0</td><td>0%</td></tr>
                     <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
                 </tbody>
             </table>
@@ -170,17 +165,17 @@
         </div>
     </div>
 
-    <!-- Pregunta 5: Redes sociales y autoestima -->
+    <!-- 5. Frecuencia de tristeza -->
     <div class="card">
-        <h3>5. ¿Las redes sociales afectan tu autoestima?</h3>
+        <h3>5. ¿Con qué frecuencia te sientes triste o sin ánimo?</h3>
         <div class="grid-layout">
             <table>
-                <thead>
-                    <tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr>
-                </thead>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
                 <tbody>
-                    <tr><td>Poco</td><td>3</td><td>30%</td></tr>
-                    <tr><td>Nada</td><td>7</td><td>70%</td></tr>
+                    <tr><td>Nunca</td><td>0</td><td>0%</td></tr>
+                    <tr><td>A veces</td><td>8</td><td>80%</td></tr>
+                    <tr><td>Frecuentemente</td><td>2</td><td>20%</td></tr>
+                    <tr><td>Siempre</td><td>0</td><td>0%</td></tr>
                     <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
                 </tbody>
             </table>
@@ -188,63 +183,234 @@
         </div>
     </div>
 
+    <!-- 6. Pérdida de interés -->
+    <div class="card">
+        <h3>6. ¿Has perdido interés en actividades que antes disfrutabas?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Sí</td><td>8</td><td>80%</td></tr>
+                    <tr><td>No</td><td>2</td><td>20%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart6"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 7. Factor que afecta estado emocional -->
+    <div class="card">
+        <h3>7. ¿Qué factor crees que más afecta tu estado emocional?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Familia</td><td>1</td><td>10%</td></tr>
+                    <tr><td>Trabajo/Estudio</td><td>6</td><td>60%</td></tr>
+                    <tr><td>Redes Sociales</td><td>0</td><td>0%</td></tr>
+                    <tr><td>Otro</td><td>3</td><td>30%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart7"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 8. Presión académica o social -->
+    <div class="card">
+        <h3>8. ¿Sientes presión académica o social?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Sí</td><td>4</td><td>40%</td></tr>
+                    <tr><td>No</td><td>0</td><td>0%</td></tr>
+                    <tr><td>A veces</td><td>6</td><td>60%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart8"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 9. Relación familiar -->
+    <div class="card">
+        <h3>9. ¿Cómo calificas tu relación familiar?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Buena</td><td>9</td><td>90%</td></tr>
+                    <tr><td>Regular</td><td>1</td><td>10%</td></tr>
+                    <tr><td>Mala</td><td>0</td><td>0%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart9"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 10. Redes sociales y autoestima -->
+    <div class="card">
+        <h3>10. ¿Las redes sociales afectan tu autoestima?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Mucho</td><td>0</td><td>0%</td></tr>
+                    <tr><td>Poco</td><td>3</td><td>30%</td></tr>
+                    <tr><td>Nada</td><td>7</td><td>70%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart10"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 11. Alguien con quien hablar -->
+    <div class="card">
+        <h3>11. ¿Tienes con quién hablar cuando te sientes mal?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Sí</td><td>8</td><td>80%</td></tr>
+                    <tr><td>No</td><td>2</td><td>20%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart11"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 12. Ayuda profesional -->
+    <div class="card">
+        <h3>12. ¿Has buscado ayuda profesional alguna vez?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Sí</td><td>1</td><td>10%</td></tr>
+                    <tr><td>No</td><td>9</td><td>90%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>10</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart12"></canvas></div>
+        </div>
+    </div>
+
+    <!-- 13. Bienestar emocional -->
+    <div class="card">
+        <h3>13. ¿Cómo calificas tu bienestar emocional?</h3>
+        <div class="grid-layout">
+            <table>
+                <thead><tr><th>Opción</th><th>Cantidad</th><th>Porcentaje</th></tr></thead>
+                <tbody>
+                    <tr><td>Bueno</td><td>6</td><td>66.7%</td></tr>
+                    <tr><td>Regular</td><td>3</td><td>33.3%</td></tr>
+                    <tr><td>Malo</td><td>0</td><td>0%</td></tr>
+                    <tr class="total-row"><td>Total</td><td>9</td><td>100%</td></tr>
+                </tbody>
+            </table>
+            <div class="chart-box"><canvas id="chart13"></canvas></div>
+        </div>
+    </div>
+
 </div>
 
 <script>
-    // Configuración de los colores
-    const colors = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6'];
+    // Paleta de colores consistente
+    const palette = ['#3498db', '#e74c3c', '#2ecc71', '#f1c40f', '#9b59b6'];
 
-    // Chart 1: Edad (Barras)
+    // 1. Edad (Barras)
     new Chart(document.getElementById('chart1'), {
         type: 'bar',
-        data: {
-            labels: ['13 años', '14 años', '38 años'],
-            datasets: [{
-                label: 'Cantidad de personas',
-                data: [5, 4, 1],
-                backgroundColor: colors
-            }]
-        },
+        data: { labels: ['13 años', '14 años', '38 años'], datasets: [{ label: 'Cantidad', data: [5, 4, 1], backgroundColor: palette }] },
         options: { responsive: true, plugins: { legend: { display: false } } }
     });
 
-    // Chart 2: Género (Pie/Torta)
+    // 2. Género (Circular / Pie)
     new Chart(document.getElementById('chart2'), {
         type: 'pie',
-        data: {
-            labels: ['Masculino', 'Femenino'],
-            datasets: [{ data: [7, 3], backgroundColor: ['#3498db', '#e74c3c'] }]
-        },
+        data: { labels: ['Masculino', 'Femenino', 'Prefiero no decirlo'], datasets: [{ data: [7, 3, 0], backgroundColor: ['#3498db', '#e74c3c', '#95a5a6'] }] },
         options: { responsive: true }
     });
 
-    // Chart 3: Frecuencia de tristeza (Dona)
+    // 3. Grado educativo (Dona)
     new Chart(document.getElementById('chart3'), {
         type: 'doughnut',
-        data: {
-            labels: ['A veces', 'Frecuentemente'],
-            datasets: [{ data: [8, 2], backgroundColor: ['#e67e22', '#f1c40f'] }]
-        },
+        data: { labels: ['Colegio/escuela', 'Universidad', 'Trabajo'], datasets: [{ data: [9, 1, 0], backgroundColor: ['#3498db', '#e67e22', '#95a5a6'] }] },
         options: { responsive: true }
     });
 
-    // Chart 4: Factor emocional (Pie/Torta)
+    // 4. Ocupación (Circular / Pie)
     new Chart(document.getElementById('chart4'), {
         type: 'pie',
-        data: {
-            labels: ['Familia', 'Trabajo/Estudio', 'Otro'],
-            datasets: [{ data: [1, 6, 3], backgroundColor: ['#3498db', '#e74c3c', '#2ecc71'] }]
-        },
+        data: { labels: ['Estudio', 'Trabajo', 'Ninguno'], datasets: [{ data: [9, 1, 0], backgroundColor: ['#3498db', '#e67e22', '#95a5a6'] }] },
         options: { responsive: true }
     });
 
-    // Chart 5: Redes Sociales (Pie/Torta)
+    // 5. Frecuencia de tristeza (Dona)
     new Chart(document.getElementById('chart5'), {
+        type: 'doughnut',
+        data: { labels: ['Nunca', 'A veces', 'Frecuentemente', 'Siempre'], datasets: [{ data: [0, 8, 2, 0], backgroundColor: ['#2ecc71', '#e67e22', '#e74c3c', '#9b59b6'] }] },
+        options: { responsive: true }
+    });
+
+    // 6. Pérdida de interés (Circular / Pie)
+    new Chart(document.getElementById('chart6'), {
         type: 'pie',
-        data: {
-            labels: ['Poco', 'Nada'],
-            datasets: [{ data: [3, 7], backgroundColor: ['#e74c3c', '#f1c40f'] }]
-        },
+        data: { labels: ['Sí', 'No'], datasets: [{ data: [8, 2], backgroundColor: ['#3498db', '#e74c3c'] }] },
+        options: { responsive: true }
+    });
+
+    // 7. Factor emocional (Circular / Pie)
+    new Chart(document.getElementById('chart7'), {
+        type: 'pie',
+        data: { labels: ['Familia', 'Trabajo/Estudio', 'Redes Sociales', 'Otro'], datasets: [{ data: [1, 6, 0, 3], backgroundColor: ['#3498db', '#e74c3c', '#f1c40f', '#2ecc71'] }] },
+        options: { responsive: true }
+    });
+
+    // 8. Presión (Dona)
+    new Chart(document.getElementById('chart8'), {
+        type: 'doughnut',
+        data: { labels: ['Sí', 'No', 'A veces'], datasets: [{ data: [4, 0, 6], backgroundColor: ['#3498db', '#2ecc71', '#f1c40f'] }] },
+        options: { responsive: true }
+    });
+
+    // 9. Relación familiar (Circular / Pie)
+    new Chart(document.getElementById('chart9'), {
+        type: 'pie',
+        data: { labels: ['Buena', 'Regular', 'Mala'], datasets: [{ data: [9, 1, 0], backgroundColor: ['#3498db', '#e67e22', '#e74c3c'] }] },
+        options: { responsive: true }
+    });
+
+    // 10. Redes sociales (Dona)
+    new Chart(document.getElementById('chart10'), {
+        type: 'doughnut',
+        data: { labels: ['Mucho', 'Poco', 'Nada'], datasets: [{ data: [0, 3, 7], backgroundColor: ['#e74c3c', '#e67e22', '#f1c40f'] }] },
+        options: { responsive: true }
+    });
+
+    // 11. Alguien con quien hablar (Circular / Pie)
+    new Chart(document.getElementById('chart11'), {
+        type: 'pie',
+        data: { labels: ['Sí', 'No'], datasets: [{ data: [8, 2], backgroundColor: ['#3498db', '#e74c3c'] }] },
+        options: { responsive: true }
+    });
+
+    // 12. Ayuda profesional (Dona)
+    new Chart(document.getElementById('chart12'), {
+        type: 'doughnut',
+        data: { labels: ['Sí', 'No'], datasets: [{ data: [1, 9], backgroundColor: ['#3498db', '#e74c3c'] }] },
+        options: { responsive: true }
+    });
+
+    // 13. Bienestar emocional (Circular / Pie)
+    new Chart(document.getElementById('chart13'), {
+        type: 'pie',
+        data: { labels: ['Bueno', 'Regular', 'Malo'], datasets: [{ data: [6, 3, 0], backgroundColor: ['#3498db', '#e74c3c', '#95a5a6'] }] },
         options: { responsive: true }
     });
 </script>
